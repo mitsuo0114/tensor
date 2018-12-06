@@ -5,5 +5,5 @@ matplotlib
 seaborn
 pydotplus
 graphviz
-tensorflow
+tensorflow==1.8.0
 keras
