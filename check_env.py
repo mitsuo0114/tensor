@@ -18,8 +18,8 @@ import pydotplus
 import graphviz
 print(f"graphviz = {graphviz.__version__}")
 
-# import tensorflow as tf
-# tf.__version__
+import tensorflow as tf
+tf.__version__
 
-# import keras
-# keras.__version__
+import keras
+keras.__version__
