@@ -1,5 +1,7 @@
 import pandas as pd
 import numpy as np
+import matplotlib
+matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from sklearn.linear_model import LinearRegression
 
@@ -16,4 +18,4 @@ plt.grid(which='minor',color='black',linestyle=':')
 plt.ylabel('y')
 plt.xlabel('x')
 plt.legend(loc='best')
-plt.show()
+plt.savefig('../build/figure.png')
