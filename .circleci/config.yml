@@ -15,7 +15,6 @@ jobs:
       - restore_cache:
           keys:
           - v1-dependencies-{{ checksum "requirements.txt" }}
-          # fallback to using the latest cache if no exact match is found
           - v1-dependencies-
 
       - run:
@@ -30,3 +29,9 @@ jobs:
           command: |
             . venv/bin/activate
             python check_env.py
+
+      - run:
+          name: run 1
+          command: |
+            . venv/bin/activate
+            python 1/1.py
