@@ -1,0 +1,17 @@
+language: python
+
+python:
+  - "3.6"
+
+dist: xenial
+
+before_script:
+  - pip install -r requirements.txt
+
+script:
+    - python check_env.py
+
+sudo: required
+
+after_success:
+    - echo Success
