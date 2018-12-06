@@ -19,7 +19,7 @@ import graphviz
 print(f"graphviz = {graphviz.__version__}")
 
 import tensorflow as tf
-tf.__version__
+print(f"Tensorflow = {tf.__version__}")
 
 import keras
-keras.__version__
+print(f"keras = {keras.__version__}")
